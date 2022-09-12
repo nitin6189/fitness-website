@@ -1,0 +1,136 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+/* navbar */
+
+nav{
+    padding-left: 10px;
+    padding-right: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:5px solid #e1e1e1;
+    padding-bottom: 3px;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+   
+    list-style: none;
+}
+
+.logo span{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: azure;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    padding-top: 11px;
+    font-size: 22px;
+    cursor: pointer;
+   
+}
+
+ul{
+    width: 600px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+ul i{
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+}
+
+ul h4:hover{
+    cursor: pointer;
+color: blue;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.login a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.login i{
+    padding-right: 10px;
+font-size: 25px;
+cursor: pointer;
+
+}
+
+/* section  */
+
+section{
+    margin-top: 80px;
+}
+
+section h1{
+    padding-left: 69px;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    width: 90vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin: auto;
+}
+
+.slide{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    flex: 1;
+    border-right: 1px solid white;
+    filter: invert(15%);
+    box-shadow: 7px 7px 7px rgb(0, 0, 0,.5);
+    transition: 0.7s ease-in-out;
+    color: white;
+    padding-top: 20px;
+    padding-left:20px ;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+
+     
+}
+
+.slide:nth-child(1){
+    background: url(img/str.jpg);
+    background-position: center center;
+}
+.slide:nth-child(2){
+    background: url(img/mobility.jpg);
+    background-position: center center;
+}
+ 
+.slide:nth-child(3){
+    background: url(img/drills.jpg) ;
+    background-position: center center;
+    border: none;
+}
+
+.slide:hover{
+flex-grow: 2.5;
+filter: invert(0);
+}
